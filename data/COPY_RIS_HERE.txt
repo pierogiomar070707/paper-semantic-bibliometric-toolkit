@@ -1,0 +1,1 @@
+Copy the complete Scopus RIS to data/scopus_export.ris before running the VOSviewer procedure.

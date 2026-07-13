@@ -1,0 +1,13 @@
+VOSviewer protocol
+==================
+1. Create a map based on bibliographic data.
+2. Read data from reference-manager files and load: C:\Users\piero\Desktop\Paper_Agricultu\Paper_Semantic_Bibliometric_Toolkit_v1.0.0\Paper_Semantic_Bibliometric_Toolkit\data\scopus_export.ris
+3. Type of analysis: Co-occurrence.
+4. Unit of analysis: Author keywords.
+5. Counting method: Fractional counting.
+6. Test occurrence thresholds 3 and 4 first.
+7. Load thesaurus/thesaurus_base.txt.
+8. Generate Network, Overlay (average publication year), and Density visualizations.
+9. Repeat with thesaurus_without_search_terms.txt to reveal technologies and tasks without query-forced terms.
+10. Record selected keywords, clusters, and all parameter values.
+11. Export vector files when possible; Illustrator may improve typography but must not alter scientific links.

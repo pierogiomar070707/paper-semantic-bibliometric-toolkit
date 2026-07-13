@@ -1,0 +1,35 @@
+﻿label,replace by
+agricultural robots,agricultural robot
+harvesting robots,harvesting robot
+fruit picking robot,fruit-picking robot
+fruit picking robots,fruit-picking robot
+fruit-picking robots,fruit-picking robot
+deep-learning,deep learning
+computer-vision,computer vision
+object-detection,object detection
+instance-segmentation,instance segmentation
+semantic-segmentation,semantic segmentation
+cnn,convolutional neural network
+cnns,convolutional neural network
+convolutional neural networks,convolutional neural network
+human robot interaction,human-robot interaction
+human robot collaboration,human-robot collaboration
+review,
+development,
+design,
+application,
+experiment,
+implementation,
+approach,
+case study,
+consideration,
+improved,
+construction,
+system,
+method,
+study,
+performance,
+research,
+analysis,
+model,
+algorithm,

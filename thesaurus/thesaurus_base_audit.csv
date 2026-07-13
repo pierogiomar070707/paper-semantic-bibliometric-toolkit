@@ -1,0 +1,35 @@
+﻿label,replace by,Action,Reason
+agricultural robots,agricultural robot,merge,Conservative normalization
+harvesting robots,harvesting robot,merge,Conservative normalization
+fruit picking robot,fruit-picking robot,merge,Conservative normalization
+fruit picking robots,fruit-picking robot,merge,Conservative normalization
+fruit-picking robots,fruit-picking robot,merge,Conservative normalization
+deep-learning,deep learning,merge,Conservative normalization
+computer-vision,computer vision,merge,Conservative normalization
+object-detection,object detection,merge,Conservative normalization
+instance-segmentation,instance segmentation,merge,Conservative normalization
+semantic-segmentation,semantic segmentation,merge,Conservative normalization
+cnn,convolutional neural network,merge,Conservative normalization
+cnns,convolutional neural network,merge,Conservative normalization
+convolutional neural networks,convolutional neural network,merge,Conservative normalization
+human robot interaction,human-robot interaction,merge,Conservative normalization
+human robot collaboration,human-robot collaboration,merge,Conservative normalization
+review,,exclude candidate,Generic term - manual audit
+development,,exclude candidate,Generic term - manual audit
+design,,exclude candidate,Generic term - manual audit
+application,,exclude candidate,Generic term - manual audit
+experiment,,exclude candidate,Generic term - manual audit
+implementation,,exclude candidate,Generic term - manual audit
+approach,,exclude candidate,Generic term - manual audit
+case study,,exclude candidate,Generic term - manual audit
+consideration,,exclude candidate,Generic term - manual audit
+improved,,exclude candidate,Generic term - manual audit
+construction,,exclude candidate,Generic term - manual audit
+system,,exclude candidate,Generic term - manual audit
+method,,exclude candidate,Generic term - manual audit
+study,,exclude candidate,Generic term - manual audit
+performance,,exclude candidate,Generic term - manual audit
+research,,exclude candidate,Generic term - manual audit
+analysis,,exclude candidate,Generic term - manual audit
+model,,exclude candidate,Generic term - manual audit
+algorithm,,exclude candidate,Generic term - manual audit

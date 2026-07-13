@@ -1,0 +1,378 @@
+{
+  "Technology": {
+    "YOLO": [
+      "\\byolo(?:v?\\d+|11|12|26)?\\b"
+    ],
+    "Faster R-CNN": [
+      "faster\\s*r-?cnn"
+    ],
+    "Mask R-CNN": [
+      "mask\\s*r-?cnn"
+    ],
+    "R-CNN family": [
+      "(?<!faster )(?<!mask )\\br-?cnn\\b"
+    ],
+    "SSD": [
+      "\\bsingle shot multibox detector\\b",
+      "\\bssd\\b"
+    ],
+    "RT-DETR": [
+      "\\brt-?detr\\b"
+    ],
+    "DETR": [
+      "(?<!rt-)\\bdetr\\b",
+      "\\bdetection transformer\\b"
+    ],
+    "CNN": [
+      "\\bconvolutional neural network(?:s)?\\b",
+      "\\bcnn(?:s)?\\b"
+    ],
+    "Transformer": [
+      "\\btransformer(?:s)?\\b"
+    ],
+    "Vision Transformer": [
+      "\\bvision transformer\\b",
+      "\\bvit(?:-?[a-z0-9/]+)?\\b"
+    ],
+    "Swin Transformer": [
+      "\\bswin(?: transformer)?\\b"
+    ],
+    "ResNet": [
+      "\\bresnet-?\\d*\\b"
+    ],
+    "EfficientNet": [
+      "\\befficientnet(?:-?[a-z0-9]+)?\\b"
+    ],
+    "MobileNet": [
+      "\\bmobilenet(?:v?\\d+)?\\b"
+    ],
+    "DenseNet": [
+      "\\bdensenet-?\\d*\\b"
+    ],
+    "U-Net": [
+      "\\bu-?net(?:\\+\\+)?\\b"
+    ],
+    "DeepLab": [
+      "\\bdeeplab(?:v?\\d+|\\+)?\\b"
+    ],
+    "SegFormer": [
+      "\\bsegformer\\b"
+    ],
+    "SAM": [
+      "\\bsegment anything model\\b",
+      "\\bsam2?\\b"
+    ],
+    "DINO": [
+      "\\bdino(?:v2)?\\b",
+      "\\bgrounding[- ]dino\\b"
+    ],
+    "CLIP": [
+      "\\bclip\\b"
+    ],
+    "Vision-Language Model": [
+      "\\bvision[- ]language model(?:s)?\\b",
+      "\\bvlm(?:s)?\\b"
+    ],
+    "Foundation Model": [
+      "\\bfoundation model(?:s)?\\b"
+    ]
+  },
+  "Task": {
+    "Harvesting": [
+      "\\bharvest(?:ing|er|ed)?\\b",
+      "\\bfruit picking\\b"
+    ],
+    "Object detection": [
+      "\\bobject detection\\b"
+    ],
+    "Classification": [
+      "\\bclassification\\b"
+    ],
+    "Segmentation": [
+      "\\bsemantic segmentation\\b",
+      "\\binstance segmentation\\b",
+      "\\bimage segmentation\\b"
+    ],
+    "Navigation": [
+      "\\bnavigation\\b",
+      "\\bpath planning\\b",
+      "\\brow guidance\\b"
+    ],
+    "Localization": [
+      "\\blocali[sz]ation\\b",
+      "\\bpose estimation\\b"
+    ],
+    "Grasping and manipulation": [
+      "\\bgrasp(?:ing)?\\b",
+      "\\bmanipulation\\b",
+      "\\bend[- ]effector\\b"
+    ],
+    "Mapping": [
+      "\\bmapping\\b",
+      "\\bslam\\b"
+    ],
+    "Tracking": [
+      "\\btracking\\b"
+    ],
+    "Task planning": [
+      "\\btask planning\\b"
+    ],
+    "Decision making": [
+      "\\bdecision[- ]making\\b",
+      "\\bexecution decision\\b"
+    ],
+    "Visual servoing": [
+      "\\bvisual servoing\\b"
+    ],
+    "Yield estimation": [
+      "\\byield estimation\\b",
+      "\\byield mapping\\b"
+    ],
+    "Phenotyping": [
+      "\\bphenotyp(?:e|ing)\\b"
+    ]
+  },
+  "Sensor": {
+    "RGB camera": [
+      "\\brgb camera(?:s)?\\b",
+      "\\brgb image(?:s)?\\b",
+      "\\bcolor camera(?:s)?\\b"
+    ],
+    "RGB-D camera": [
+      "\\brgb[- ]?d\\b",
+      "\\bdepth camera(?:s)?\\b"
+    ],
+    "Stereo camera": [
+      "\\bstereo camera(?:s)?\\b",
+      "\\bstereo vision\\b"
+    ],
+    "LiDAR": [
+      "\\blidar\\b",
+      "\\blaser scanner(?:s)?\\b"
+    ],
+    "Hyperspectral": [
+      "\\bhyperspectral\\b"
+    ],
+    "Multispectral": [
+      "\\bmultispectral\\b"
+    ],
+    "Thermal camera": [
+      "\\bthermal camera(?:s)?\\b",
+      "\\binfrared camera(?:s)?\\b"
+    ],
+    "UAV/Drone": [
+      "\\buav(?:s)?\\b",
+      "\\bdrone(?:s)?\\b"
+    ],
+    "Camera (generic)": [
+      "\\bcamera(?:s)?\\b"
+    ],
+    "GNSS/GPS": [
+      "\\bgnss\\b",
+      "\\bgps\\b"
+    ],
+    "IMU": [
+      "\\bimu\\b",
+      "\\binertial measurement unit\\b"
+    ]
+  },
+  "Metric": {
+    "Accuracy": [
+      "\\baccuracy\\b"
+    ],
+    "Precision": [
+      "\\bprecision\\b"
+    ],
+    "Recall": [
+      "\\brecall\\b"
+    ],
+    "F1-score": [
+      "\\bf1[- ]?score\\b",
+      "\\bf-score\\b"
+    ],
+    "mAP": [
+      "\\bmap(?:@?0?\\.?5)?\\b",
+      "\\bmean average precision\\b"
+    ],
+    "IoU": [
+      "\\biou\\b",
+      "\\bintersection over union\\b"
+    ],
+    "Dice": [
+      "\\bdice(?: coefficient| score)?\\b"
+    ],
+    "Inference time": [
+      "\\binference time\\b",
+      "\\blatency\\b"
+    ],
+    "FPS": [
+      "\\bfps\\b",
+      "\\bframes per second\\b"
+    ],
+    "RMSE": [
+      "\\brmse\\b",
+      "\\broot mean square error\\b"
+    ]
+  },
+  "Robot type": {
+    "Agricultural robot": [
+      "\\bagricultural robot(?:s|ics)?\\b"
+    ],
+    "Harvesting robot": [
+      "\\bharvesting robot(?:s)?\\b"
+    ],
+    "Fruit-picking robot": [
+      "\\bfruit[- ]picking robot(?:s)?\\b"
+    ],
+    "Orchard robot": [
+      "\\borchard robot(?:s)?\\b"
+    ],
+    "Greenhouse robot": [
+      "\\bgreenhouse robot(?:s)?\\b"
+    ],
+    "Field robot": [
+      "\\bfield robot(?:s)?\\b"
+    ],
+    "Collaborative robot": [
+      "\\bcollaborative robot(?:s)?\\b",
+      "\\bcobot(?:s)?\\b"
+    ],
+    "Mobile robot": [
+      "\\bmobile robot(?:s)?\\b"
+    ],
+    "Manipulator": [
+      "\\brobotic manipulator(?:s)?\\b",
+      "\\bmanipulator(?:s)?\\b"
+    ]
+  },
+  "Crop": {
+    "Tomato": [
+      "\\btomato(?:es)?\\b"
+    ],
+    "Apple": [
+      "\\bapple(?:s)?\\b"
+    ],
+    "Grape": [
+      "\\bgrape(?:s)?\\b",
+      "\\bgrapevine\\b"
+    ],
+    "Strawberry": [
+      "\\bstrawberr(?:y|ies)\\b"
+    ],
+    "Cucumber": [
+      "\\bcucumber(?:s)?\\b"
+    ],
+    "Pepper": [
+      "\\bpepper(?:s)?\\b",
+      "\\bcapsicum\\b"
+    ],
+    "Citrus": [
+      "\\bcitrus\\b",
+      "\\borange(?:s)?\\b",
+      "\\blemon(?:s)?\\b"
+    ],
+    "Mango": [
+      "\\bmango(?:es)?\\b"
+    ],
+    "Kiwi": [
+      "\\bkiwi(?:fruit|fruits)?\\b"
+    ],
+    "Berry": [
+      "\\bberr(?:y|ies)\\b"
+    ],
+    "Cotton": [
+      "\\bcotton\\b"
+    ],
+    "Wheat": [
+      "\\bwheat\\b"
+    ],
+    "Maize/Corn": [
+      "\\bmaize\\b",
+      "\\bcorn\\b"
+    ],
+    "Avocado": [
+      "\\bavocado(?:s)?\\b"
+    ],
+    "Cherry": [
+      "\\bcherr(?:y|ies)\\b"
+    ]
+  },
+  "Environment": {
+    "Greenhouse": [
+      "\\bgreenhouse(?:s)?\\b"
+    ],
+    "Orchard": [
+      "\\borchard(?:s)?\\b"
+    ],
+    "Open field": [
+      "\\bopen field\\b",
+      "\\bfield environment\\b"
+    ],
+    "Under-canopy": [
+      "\\bunder[- ]canopy\\b"
+    ],
+    "Indoor agriculture": [
+      "\\bindoor (?:farm|agriculture)\\b"
+    ],
+    "Protected agriculture": [
+      "\\bprotected agriculture\\b"
+    ],
+    "Row crops": [
+      "\\brow crop(?:s)?\\b"
+    ],
+    "Vineyard": [
+      "\\bvineyard(?:s)?\\b"
+    ]
+  },
+  "Semantic/Assistance": {
+    "Semantic perception": [
+      "\\bsemantic perception\\b"
+    ],
+    "Scene understanding": [
+      "\\bscene understanding\\b",
+      "\\bsemantic scene understanding\\b"
+    ],
+    "Scene classification": [
+      "\\bscene classification\\b",
+      "\\bscene recognition\\b"
+    ],
+    "Activity recognition": [
+      "\\bactivity recognition\\b",
+      "\\baction recognition\\b"
+    ],
+    "Task recognition": [
+      "\\btask recognition\\b",
+      "\\btask understanding\\b"
+    ],
+    "Human-robot interaction": [
+      "\\bhuman[- ]robot interaction\\b",
+      "\\bhri\\b"
+    ],
+    "Human-robot collaboration": [
+      "\\bhuman[- ]robot collaboration\\b"
+    ],
+    "Robot assistance": [
+      "\\brobot assistance\\b",
+      "\\bassistive robot(?:s)?\\b"
+    ],
+    "Assistance prediction": [
+      "\\bassistance prediction\\b",
+      "\\bpredict(?:ing|ion of)? assistance\\b"
+    ],
+    "Human-object interaction": [
+      "\\bhuman[- ]object interaction\\b"
+    ],
+    "Context-aware": [
+      "\\bcontext[- ]aware\\b",
+      "\\bcontextual perception\\b"
+    ],
+    "Workload": [
+      "\\bworkload\\b",
+      "\\bphysical workload\\b"
+    ],
+    "Intention recognition": [
+      "\\bintention recognition\\b",
+      "\\bintent recognition\\b"
+    ]
+  }
+}

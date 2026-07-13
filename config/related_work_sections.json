@@ -1,0 +1,30 @@
+{
+  "Vision-Based Perception in Agricultural Environments": [
+    "\\bcomputer vision\\b",
+    "\\bmachine vision\\b",
+    "\\bvisual perception\\b",
+    "\\brobot vision\\b",
+    "\\bagricultural robot(?:ics|s)?\\b"
+  ],
+  "Scene Classification, Object Detection, and Segmentation in Harvesting Tasks": [
+    "\\bscene classification\\b",
+    "\\bscene recognition\\b",
+    "\\bobject detection\\b",
+    "\\bsemantic segmentation\\b",
+    "\\binstance segmentation\\b",
+    "\\byolo\\b",
+    "\\brt-?detr\\b",
+    "\\bvision transformer\\b"
+  ],
+  "Semantic Scene Understanding and Assistance Prediction": [
+    "\\bsemantic perception\\b",
+    "\\bscene understanding\\b",
+    "\\btask planning\\b",
+    "\\bdecision[- ]making\\b",
+    "\\bhuman[- ]robot\\b",
+    "\\bassistance\\b",
+    "\\bactivity recognition\\b",
+    "\\bcontext[- ]aware\\b",
+    "\\btask recognition\\b"
+  ]
+}

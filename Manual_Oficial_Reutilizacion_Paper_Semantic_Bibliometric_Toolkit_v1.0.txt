@@ -1,0 +1,112 @@
+MANUAL OFICIAL DE REUTILIZACIÓN Y ADAPTACIÓN
+Paper Semantic Bibliometric Toolkit v1.0.0
+Documento de referencia - julio de 2026
+
+ESTADO OFICIAL
+La versión 1.0.0 es una línea base técnica estable y validada: 10 notebooks PASS, 11 salidas esenciales PASS y RIS Ready. El motor se conserva; los datos y la configuración científica se adaptan a cada investigación.
+
+RESPUESTA DIRECTA
+Sí, el toolkit puede reutilizarse para futuros trabajos. No debes reescribir los notebooks. Para una nueva investigación debes duplicar la carpeta, reemplazar CSV y RIS, actualizar config.json, adaptar domain_taxonomy.json, keyword_rules.json y related_work_sections.json, limpiar las salidas anteriores y volver a ejecutar la validación.
+
+1. QUÉ PERMANECE FIJO
+- notebooks/00-09
+- notebooks/10_Master_State_of_the_Art_Dashboard.ipynb
+- src/
+- tools/
+- requirements.txt, salvo actualización técnica
+
+2. QUÉ DEBE CAMBIAR
+- data/nuevo_corpus.csv: siempre
+- data/scopus_export.ris: siempre
+- config.json: siempre
+- config/domain_taxonomy.json: revisar y adaptar
+- config/keyword_rules.json: revisar y adaptar
+- config/related_work_sections.json: cambiar para cada paper
+- config/source_replacements.json: solo cuando la auditoría detecte variantes reales
+- outputs/, figures/, reports/, thesaurus/, validation/: limpiar en cada copia nueva
+
+3. COMPATIBILIDAD IMPORTANTE
+Los notebooks 04, 07 y 09 utilizan las familias Task, Technology y Semantic/Assistance. Para reutilizar sin cambiar código, conserva esos nombres y redefine sus conceptos. Puedes agregar familias nuevas; el Notebook Maestro puede mostrarlas.
+
+4. NIVELES DE ADAPTACIÓN
+Nivel A: misma temática y nueva fecha. Cambiar datos, search_date, años parciales y revisar thesaurus.
+Nivel B: temática relacionada, como comunicación no verbal en robótica agrícola. Cambiar datos, config, taxonomía, keywords y Related Work.
+Nivel C: dominio diferente. Rediseñar taxonomía, métricas y secciones; el motor se conserva.
+
+5. PROCEDIMIENTO
+1) Duplicar la carpeta.
+2) Renombrar el nuevo proyecto.
+3) Limpiar outputs, figures, reports, thesaurus y validation.
+4) Copiar CSV y RIS.
+5) Actualizar config.json.
+6) Adaptar domain_taxonomy.json.
+7) Adaptar keyword_rules.json.
+8) Definir related_work_sections.json.
+9) Ejecutar tools/validate_all_notebooks.py.
+10) Revisar n-grams, variantes, modelos y datasets.
+11) Corregir configuración y ejecutar nuevamente.
+12) Ejecutar el Notebook Maestro.
+13) Generar VOSviewer.
+14) Leer manualmente los candidatos.
+15) Confirmar cualquier gap mediante búsquedas dirigidas.
+
+6. EJEMPLO: COMUNICACIÓN NO VERBAL PARA ROBOT MÓVIL AGRÍCOLA
+Familias recomendadas:
+- Technology: YOLO, OpenPose, MediaPipe, HRNet, Transformers, Graph Neural Networks.
+- Task: gesture recognition, pose estimation, activity recognition, intention recognition, human tracking, proxemic navigation, task allocation.
+- Sensor: RGB, RGB-D, stereo, LiDAR, wearable IMU.
+- Metric: accuracy, F1, response time, task completion, success rate, safety distance, usability, workload, trust.
+- Robot type: mobile robot, agricultural robot, field robot, collaborative robot.
+- Environment: greenhouse, orchard, open field, row crops.
+- Semantic/Assistance: non-verbal communication, HRI, HRC, intention recognition, activity recognition, context-aware behavior, assistance, social signals.
+- Opcionales: Human cue, Robot cue, HRI outcome.
+
+Secciones sugeridas de Related Work:
+1) Human-Robot Interaction and Mobile Robots in Agricultural Environments.
+2) Non-Verbal Human-to-Robot Perception: Gestures, Posture, Gaze, and Intention.
+3) Robot-to-Human Communication, Motion Legibility, and Collaborative Assistance.
+
+7. CONSULTA INICIAL DE SCOPUS
+TITLE-ABS-KEY(
+  ("non-verbal communication" OR "nonverbal communication" OR
+   "gesture recognition" OR "hand gesture" OR "body posture" OR
+   "human pose estimation" OR "gaze estimation" OR proxemic* OR
+   "social signal*" OR "intention recognition" OR "activity recognition")
+  AND
+  ("mobile robot*" OR "agricultural robot*" OR "field robot*" OR
+   "farm robot*" OR "harvesting robot*")
+  AND
+  (agricultur* OR farm* OR orchard* OR greenhouse* OR harvest*)
+)
+
+8. CONTROL DE CALIDAD
+- Todos los notebooks deben terminar en PASS.
+- Revisar keywords y variantes.
+- Verificar falsos positivos por concepto.
+- Revisar n-grams descubiertos.
+- Leer los papers priorizados.
+- No declarar gaps solo por frecuencia cero.
+- No comparar años parciales con años completos sin advertencia.
+
+9. CHECKLIST
+[ ] Dupliqué la carpeta del toolkit y conservé el proyecto anterior.
+[ ] Eliminé las salidas generadas del nuevo proyecto.
+[ ] Copié el nuevo CSV y RIS desde la misma consulta.
+[ ] Actualicé project_name, paper_title y query_label.
+[ ] Registré search_date y search_query.
+[ ] Actualicé input_csv e input_ris.
+[ ] Revisé años parciales o futuros.
+[ ] Adapté domain_taxonomy.json.
+[ ] Conservé las familias Task, Technology y Semantic/Assistance.
+[ ] Revisé keyword_rules.json.
+[ ] Definí las subsecciones reales de Related Work.
+[ ] Ejecuté los notebooks 00-09 con PASS.
+[ ] Revisé variantes, n-grams y falsos positivos.
+[ ] Volví a ejecutar después de ajustar la configuración.
+[ ] Ejecuté el Notebook Maestro.
+[ ] Generé VOSviewer con el RIS y el thesaurus auditado.
+[ ] Leí manualmente los trabajos seleccionados.
+[ ] Confirmé el research gap mediante triangulación.
+
+CONCLUSIÓN
+El toolkit es estable como motor, pero configurable como sistema científico. Esta separación permite reutilizarlo sin reescribir código y mantiene cada paper reproducible, auditable y adaptado a su propia pregunta de investigación.

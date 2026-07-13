@@ -1,0 +1,67 @@
+# ============================================================
+# Paper Semantic Bibliometric Toolkit
+# Files intentionally excluded from Git
+# ============================================================
+
+# Python environments and caches
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local project configuration
+# Keep config.example.json in Git and create config.json locally.
+config.json
+
+# Raw bibliographic data
+# Do not publish Scopus CSV/RIS exports in the reusable toolkit repository.
+data/*
+!data/README.md
+!data/COPY_RIS_HERE.txt
+!data/.gitkeep
+
+# Generated analysis outputs
+outputs/*
+!outputs/.gitkeep
+
+figures/*
+!figures/.gitkeep
+
+reports/*
+!reports/.gitkeep
+
+# Runtime validation artifacts
+validation/executed_notebooks/*
+!validation/executed_notebooks/.gitkeep
+validation/*.csv
+validation/source_checksum_manifest.csv
+validation/output_manifest.csv
+
+# Corpus-specific VOSviewer selections
+thesaurus/keyword_selection_min*.csv
+thesaurus/thesaurus_without_search_terms*
+thesaurus/*_generated.txt
+thesaurus/*_generated.csv
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.log
+~$*
+*.zip

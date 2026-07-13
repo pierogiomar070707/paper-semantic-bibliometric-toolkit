@@ -1,0 +1,30 @@
+{
+  "toolkit_version": "1.0.0",
+  "project_name": "Bibliometric Analysis Project",
+  "paper_title": "REPLACE_WITH_PAPER_TITLE",
+  "query_label": "REPLACE_WITH_QUERY_LABEL",
+  "search_database": "Scopus",
+  "search_date": "YYYY-MM-DD",
+  "input_csv": "data/scopus_export.csv",
+  "input_ris": "data/scopus_export.ris",
+  "top_n": 20,
+  "minimum_keyword_occurrences": 3,
+  "keyword_thresholds_to_export": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "recent_window_years": 3,
+  "partial_or_future_years": [],
+  "minimum_reasonable_year": 1900,
+  "source_similarity_threshold": 0.82,
+  "max_related_work_candidates_per_section": 40,
+  "figure_formats": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "figure_dpi": 600,
+  "search_query": "REPLACE_WITH_THE_COMPLETE_SCOPUS_QUERY"
+}
